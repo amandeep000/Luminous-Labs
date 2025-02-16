@@ -111,3 +111,47 @@ body {
   font-size: 17px;
   color: rgba(242, 236, 226, 0.6);
 }
+/* nav language button style */
+.language {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+
+.lang-text {
+  display: block;
+  color: #fcf7f1;
+}
+
+.drop-down {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 80px;
+  padding: 8px;
+  color: #fcf7f1;
+
+  z-index: 1;
+}
+
+.language:hover .drop-down {
+  display: block;
+  opacity: 0.5;
+}
+
+.arrow {
+  display: inline-block;
+  pointer-events: none;
+}
+
+.arrow img {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
